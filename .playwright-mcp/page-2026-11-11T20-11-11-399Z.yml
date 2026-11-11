@@ -1,0 +1,182 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#contenido"
+  - banner [ref=e3]:
+    - paragraph [ref=e4]: Envío gratis desde $80.000 · 3 cuotas sin interés
+    - generic [ref=e5]:
+      - link "miniModa" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - navigation "Principal" [ref=e7]:
+        - link "Inicio" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Tienda" [ref=e9] [cursor=pointer]:
+          - /url: /tienda
+        - link "Créditos" [ref=e10] [cursor=pointer]:
+          - /url: /creditos
+        - link "Registro" [ref=e11] [cursor=pointer]:
+          - /url: /registro
+        - link "Checkout" [ref=e12] [cursor=pointer]:
+          - /url: /checkout
+        - link "Bandeja" [ref=e13] [cursor=pointer]:
+          - /url: /bandeja
+      - generic [ref=e14]:
+        - generic [ref=e15]: Idioma
+        - combobox "Idioma" [ref=e16]:
+          - option "ES" [selected]
+          - option "EN"
+          - option "PT"
+        - button "Activar modo oscuro" [ref=e17] [cursor=pointer]
+        - link "Carrito, 0 productos" [ref=e20] [cursor=pointer]:
+          - /url: /carrito
+          - generic [ref=e24]: "0"
+    - navigation "Edades" [ref=e25]:
+      - generic [ref=e26]:
+        - link "Todo" [ref=e27] [cursor=pointer]:
+          - /url: /tienda
+        - link "Bebé" [ref=e28] [cursor=pointer]:
+          - /url: /tienda?edad=Beb%C3%A9%20(0-2)
+        - link "Niña" [ref=e29] [cursor=pointer]:
+          - /url: /tienda?edad=Ni%C3%B1a%20(3-8)
+        - link "Niño" [ref=e30] [cursor=pointer]:
+          - /url: /tienda?edad=Ni%C3%B1o%20(3-8)
+        - link "Pre-teen" [ref=e31] [cursor=pointer]:
+          - /url: /tienda?edad=Pre-teen%20(9-12)
+  - main [ref=e32]:
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - heading "Checkout" [level=1] [ref=e36]
+        - paragraph [ref=e37]: Finalizá tu compra en MiniModa. Enviamos a cualquier país. Validá los formatos y usá las tarjetas de prueba para aprobar o rechazar el pago.
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - generic [ref=e40]: Datos + envío
+            - generic [ref=e41]: país y dirección
+          - generic [aria-hidden] [ref=e42]: →
+          - generic [ref=e43]:
+            - generic [ref=e44]: Tarjeta
+            - generic [ref=e45]: de prueba
+          - generic [aria-hidden] [ref=e46]: →
+          - generic [ref=e47]:
+            - generic [ref=e48]: Autorización
+            - generic [ref=e49]: aprueba/rechaza
+          - generic [aria-hidden] [ref=e50]: →
+          - generic [ref=e51]:
+            - generic [ref=e52]: Orden + email
+            - generic [ref=e53]: va a la Bandeja
+        - group [ref=e54]:
+          - generic "Tarjetas de prueba (bypass)" [ref=e55]
+        - generic [ref=e56]:
+          - region "1. Datos y envío" [ref=e57]:
+            - heading "1. Datos y envío" [level=2] [ref=e58]
+            - generic [ref=e59]:
+              - generic [ref=e60]: Nombre
+              - textbox "Nombre" [ref=e61]
+            - generic [ref=e62]:
+              - generic [ref=e63]: Dirección
+              - textbox "Dirección" [ref=e64]
+            - generic [ref=e65]:
+              - generic [ref=e66]: Email
+              - textbox "Email" [ref=e67]
+            - generic [ref=e68]:
+              - generic [ref=e69]: País de envío
+              - combobox "País de envío" [ref=e70]:
+                - option "Argentina" [selected]
+                - option "Brasil"
+                - option "Chile"
+                - option "Uruguay"
+                - option "Paraguay"
+                - option "Bolivia"
+                - option "Perú"
+                - option "Colombia"
+                - option "México"
+                - option "Ecuador"
+                - option "Venezuela"
+                - option "España"
+                - option "Estados Unidos"
+                - option "Italia"
+                - option "Francia"
+                - option "Alemania"
+                - option "Japón"
+                - option "Australia"
+              - generic [ref=e71]: "Costo de envío: $ 3.500"
+          - region "2. Pago" [ref=e72]:
+            - heading "2. Pago" [level=2] [ref=e73]
+            - generic [ref=e74]:
+              - generic [ref=e75]: Número de tarjeta
+              - textbox "Número de tarjeta" [ref=e76]:
+                - /placeholder: 16 dígitos
+            - generic [ref=e77]:
+              - generic [ref=e78]: Vencimiento (MM/AA)
+              - textbox "Vencimiento (MM/AA)" [ref=e79]:
+                - /placeholder: MM/AA
+              - paragraph [ref=e80]: Formato MM/AA.
+            - generic [ref=e81]:
+              - generic [ref=e82]: CVV
+              - textbox "CVV" [ref=e83]:
+                - /placeholder: 3 o 4 dígitos
+          - region "3. Confirmación" [ref=e84]:
+            - heading "3. Confirmación" [level=2] [ref=e85]
+            - button "Confirmar compra" [ref=e86] [cursor=pointer]
+      - complementary "Resumen" [ref=e87]:
+        - heading "Resumen" [level=2] [ref=e88]
+        - paragraph [ref=e89]: Todavía no hay prendas en el carrito.
+        - generic [ref=e90]:
+          - generic [ref=e91]: Subtotal de prendas
+          - generic [ref=e92]: $ 0
+        - generic [ref=e93]:
+          - generic [ref=e94]: Envío
+          - generic [ref=e95]: $ 3.500
+        - generic [ref=e96]:
+          - generic [ref=e97]: Estimado
+          - generic [ref=e98]: $ 3.500
+  - contentinfo [ref=e99]:
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: miniModa
+        - paragraph [ref=e103]: Ropa para niños, pensada para todos los días.
+        - paragraph [ref=e104]: "Medios de pago: tarjeta de crédito, débito y transferencia."
+        - paragraph [ref=e105]: Atención al cliente, de lunes a viernes, de 9 a 18 h.
+        - paragraph [ref=e106]: MiniModa · Ropa para niños. Tienda de demostración — datos ficticios, sin pagos reales.
+      - navigation "Tienda" [ref=e107]:
+        - heading "Tienda" [level=2] [ref=e108]
+        - list [ref=e109]:
+          - listitem [ref=e110]:
+            - link "Tienda" [ref=e111] [cursor=pointer]:
+              - /url: /tienda
+          - listitem [ref=e112]:
+            - link "Carrito" [ref=e113] [cursor=pointer]:
+              - /url: /carrito
+          - listitem [ref=e114]:
+            - link "Checkout" [ref=e115] [cursor=pointer]:
+              - /url: /checkout
+          - listitem [ref=e116]:
+            - link "Registro" [ref=e117] [cursor=pointer]:
+              - /url: /registro
+      - navigation "Ayuda" [ref=e118]:
+        - heading "Ayuda" [level=2] [ref=e119]
+        - list [ref=e120]:
+          - listitem [ref=e121]:
+            - link "Envíos" [ref=e122] [cursor=pointer]:
+              - /url: /legal/envios
+          - listitem [ref=e123]:
+            - link "Cambios y devoluciones" [ref=e124] [cursor=pointer]:
+              - /url: /legal/cambios
+          - listitem [ref=e125]:
+            - link "Créditos" [ref=e126] [cursor=pointer]:
+              - /url: /creditos
+          - listitem [ref=e127]:
+            - link "Bandeja" [ref=e128] [cursor=pointer]:
+              - /url: /bandeja
+      - navigation "Legal" [ref=e129]:
+        - heading "Legal" [level=2] [ref=e130]
+        - list [ref=e131]:
+          - listitem [ref=e132]:
+            - link "Términos y condiciones" [ref=e133] [cursor=pointer]:
+              - /url: /legal/terminos
+          - listitem [ref=e134]:
+            - link "Política de privacidad" [ref=e135] [cursor=pointer]:
+              - /url: /legal/privacidad
+          - listitem [ref=e136]:
+            - link "hola@minimoda.test" [ref=e137] [cursor=pointer]:
+              - /url: mailto:hola@minimoda.test
+        - paragraph [ref=e138]: Fotos de producto generadas para MiniModa.
+  - alert [ref=e139]
